@@ -5,9 +5,10 @@ import ForgotPasswordContainer from '@/components/auth/ForgotPasswordContainer';
 import ResetPasswordContainer from '@/components/auth/ResetPasswordContainer';
 import LoginCheckpointContainer from '@/components/auth/LoginCheckpointContainer';
 import { NotFound } from '@/components/elements/ScreenBlock';
+import tw from 'twin.macro';
 
 export default ({ location, history, match }: RouteComponentProps) => (
-    <div className={'pt-8 xl:pt-32'}>
+    <div className={'pt-8 xl:pt-32'} css={tw`h-screen flex justify-center items-center`}>
         <Switch location={location}>
             <Route path={`${match.path}/login`} component={LoginContainer} exact/>
             <Route path={`${match.path}/login/checkpoint`} component={LoginCheckpointContainer}/>
