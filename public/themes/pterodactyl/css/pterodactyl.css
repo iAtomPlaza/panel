@@ -517,6 +517,10 @@ body {
     color: #9aa5b1;
 }
 
+.skin-blue .main-header .navbar .sidebar-toggle::before {
+    content: none;
+}
+
 .skin-blue .main-header .navbar .nav>li>a {
     color: #9aa5b1;
 }
